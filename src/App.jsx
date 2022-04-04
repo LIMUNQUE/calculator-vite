@@ -5,15 +5,15 @@ import { Buttons } from './Buttons';
 import { Display } from './Display';
 function App() {
 
-  function onPressed(){
-    console.log('pressed')
+  function onPressed(pala){
+    console.log(pala)
   }
   return (        
       <div className="BoxOperation">
         <div><Display className="Screen"/></div>
         <div>
           <Buttons
-            onPressed={()=>{onPressed()}}
+            onPressed={(pala)=>{onPressed(pala)}}
           />
             
 

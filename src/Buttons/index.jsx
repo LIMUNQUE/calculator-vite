@@ -4,34 +4,41 @@ import React from 'react';
 function Buttons(props){
     return(
         <div className="gridContainer">
-                <div>
-                    <button
+                <button
                         type='button' 
-                        className='btn1 btnC' 
-                        value='C' 
-                        onClick={()=>{props.onPressed()}}
+                        className='btn1'  
+                        onClick={()=>{props.onPressed('C')}}
                         >C
-                    </button>
-                </div>
-                <div><button type='button' className='btn1' value={'%'}>%</button></div>
-                <div><button type='button' className='btn1' value={'+/-'}>+/-</button></div>
-                <div><button type='button' className='btn1' value={'/'}>/</button></div>
-                <div><button type='button' className='btn2' value={'7'}>7</button></div>
-                <div><button type='button' className='btn2' value={'8'}>8</button></div>
-                <div><button type='button' className='btn2' value={'9'}>9</button></div>
-                <div><button type='button' className='btn1' value={'*'}>*</button></div>
-                <div><button type='button' className='btn2' value={'4'}>4</button></div>
-                <div><button type='button' className='btn2' value={'5'}>5</button></div>
-                <div><button type='button' className='btn2' value={'6'}>6</button></div>
-                <div><button type='button' className='btn1' value={'-'}>-</button></div>
-                <div><button type='button' className='btn2' value={'3'}>3</button></div>
-                <div><button type='button' className='btn2' value={'2'}>2</button></div>
-                <div><button type='button' className='btn2' value={'1'}>1</button></div>
-                <div><button type='button' className='btn1' value={'+'}>+</button></div>
-                <div><button type='button' className='btn1' value={'.'}>.</button></div>
-                <div><button type='button' className='btn2' value={'0'}>0</button></div>
-                <div><button type='button' className='btn1' value={'<'}>{"<"}</button></div>
-                <div><button type='button' className='btn1' value={'='}>=</button></div>
+                </button>
+                <button 
+                        type='button' 
+                        className='btn1'
+                        onClick={()=>{props.onPressed('%')}}
+                        >%
+                </button>
+                <button 
+                    type='button' 
+                    className='btn1' 
+                    onClick={()=>{props.onPressed('+/-')}}
+                    >+/-
+                </button>
+                <button type='button' className='btn1' onClick={()=>{props.onPressed('/')}}>/</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('7')}}>7</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('8')}}>8</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('9')}}>9</button>
+                <button type='button' className='btn1' onClick={()=>{props.onPressed('*')}}>*</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('4')}}>4</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('5')}}>5</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('6')}}>6</button>
+                <button type='button' className='btn1' onClick={()=>{props.onPressed('-')}}>-</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('3')}}>3</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('2')}}>2</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('1')}}>1</button>
+                <button type='button' className='btn1' onClick={()=>{props.onPressed('+')}}>+</button>
+                <button type='button' className='btn1' onClick={()=>{props.onPressed('.')}}>.</button>
+                <button type='button' className='btn2' onClick={()=>{props.onPressed('0')}}>0</button>
+                <button type='button' className='btn1' onClick={()=>{props.onPressed('<')}}>{"<"}</button>
+                <button type='button' className='btn1' onClick={()=>{props.onPressed('=')}}>=</button>
         </div>    
     )
 }

@@ -1,0 +1,10 @@
+.BoxOperation{
+  width: 100%;
+  display: grid;
+  grid-template-rows: 20% auto;
+  justify-content:center;
+}
+.BoxOperation div{
+  background-color: #23272a;
+  justify-content:center;
+}

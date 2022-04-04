@@ -1,0 +1,13 @@
+.css-input {
+    border:#253745 15px solid;
+    font-size: 30px;
+    width: 400px;
+    align-items: flex-end;
+    text-align: end;
+    color: white;
+    background-color: #253745;
+
+}
+.css-input:focus {
+    outline:none;
+}

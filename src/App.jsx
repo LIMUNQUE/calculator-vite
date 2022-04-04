@@ -5,13 +5,20 @@ import { Buttons } from './Buttons';
 import { Display } from './Display';
 function App() {
 
-  return (
-    <React.Fragment>        
+  function onPressed(){
+    console.log('pressed')
+  }
+  return (        
       <div className="BoxOperation">
         <div><Display className="Screen"/></div>
-        <div><Buttons className="Keeyboard"/></div>
+        <div>
+          <Buttons
+            onPressed={()=>{onPressed()}}
+          />
+            
+
+        </div>
       </div>
-    </React.Fragment>
   )
 }
 

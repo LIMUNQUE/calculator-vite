@@ -4,7 +4,15 @@ import React from 'react';
 function Buttons(props){
     return(
         <div className="gridContainer">
-                <div><button type='button' className='btn1 btnC' value='C' onClick={'reset()'}>C</button></div>
+                <div>
+                    <button
+                        type='button' 
+                        className='btn1 btnC' 
+                        value='C' 
+                        onClick={()=>{props.onPressed()}}
+                        >C
+                    </button>
+                </div>
                 <div><button type='button' className='btn1' value={'%'}>%</button></div>
                 <div><button type='button' className='btn1' value={'+/-'}>+/-</button></div>
                 <div><button type='button' className='btn1' value={'/'}>/</button></div>
